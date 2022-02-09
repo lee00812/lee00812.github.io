@@ -1,0 +1,44 @@
+/* body font family and font size */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: darkslategrey;
+}
+
+/* header and footer background color */
+header, footer {
+    background-color: dimgrey;
+}
+
+/* site title color */
+.site-title {
+    color: ivory;
+}
+
+/* image box-shadow */
+#my-image {
+    box-shadow: 0px 0px 2px 1px black;
+    width: 640px;
+    height: 427px;
+}
+
+/* list style */
+ul {
+    list-style-type: square;
+}
+
+.hobbies ul li:nth-child(odd) {
+    background-color: navajowhite;
+}
+
+/* Navigation */
+a:link, a:visited {
+    text-decoration: none;
+    background-color: rosybrown;
+    border: 2px solid black;
+    padding: 20px 20px;
+}
+
+a:hover {
+    background-color: floralwhite;
+}
