@@ -8,11 +8,13 @@
     clear: both;
 }
 
+/* styling body font */
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
 }
 
+/* styling header */
 header {
     background-color: #222222;
 }
@@ -23,6 +25,7 @@ header {
     padding-bottom: 1rem;
 }
 
+/* styling list style */
 ul {
     list-style-type: none;
     padding-left: 0;
@@ -34,12 +37,45 @@ ul li {
     text-align: center;
 }
 
+/* styling nav bottons */
 .nav a:link, a:visited {
     text-decoration: none;
     color: #c78c06;
 }
 
+/* styling search class */
 .search {
-    width: 100%;
-    height: 2rem;
+    padding: 1rem;
 }
+
+/* style the search field */
+.search input[type=text] {
+    padding: 1rem;
+    border: 1px solid #c78c06;
+    float: left;
+    width: 90%;
+    background: #fff;
+  }
+
+  /* Style the submit button */
+.search button {
+    float: left;
+    width: 10%;
+    padding: 1rem;
+    background: #222;
+    color: #c78c06;
+    border: 1px solid #c78c06;
+    cursor: pointer;
+  }
+  
+.search button:hover {
+    background: #c78c06;
+    color: #222;
+  }
+
+  /* Clear floats */
+.search::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
