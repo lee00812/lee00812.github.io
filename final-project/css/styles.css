@@ -79,3 +79,39 @@ ul li {
     clear: both;
     display: table;
   }
+
+/* container holding the main banner and the main banner content
+.container {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+.main-banner h1 {
+    font-size: 4rem;
+}
+
+styling the main banner content
+.main-banner {
+    position: absolute;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    top: 600px;
+    width: 100%;
+    background-color: rgba(34, 34, 34, 0.5); 
+}
+
+styling the main banner button 
+.button a:link, a:visited {
+    background-color: #c78c06;
+    color: #222;
+    padding: 30px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+.button a:hover, a:active {
+    background-color:#222;
+    color: #c78c06;
+  } */
