@@ -11,7 +11,6 @@
 /* styling body font */
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
 }
 
 /* styling header */
@@ -43,7 +42,7 @@ ul li:nth-child(1) {
     color: #222;
 }
 
-/* styling nav bottons */
+/* styling nav buttons */
 .nav a:link, a:visited {
     text-decoration: none;
     color: #c78c06;
@@ -87,10 +86,11 @@ ul li:nth-child(1) {
   }
 
 /* container holding the main banner and the main banner content */
-.container {
+.container1 {
     position: relative;
     text-align: left;
     color: white;
+    min-width: 650px;
 }
 
 .main-banner h1 {
@@ -108,18 +108,19 @@ ul li:nth-child(1) {
     background-color: rgba(34, 34, 34, 0.5); 
 }
 
-
-/* styling the main banner button  */
-.connect a:link, a:visited {
+/* styling the main banner button */
+button.button.button1 {
     background-color: #c78c06;
-    color: #222;
     padding: 30px 40px;
     text-align: center;
-    text-decoration: none;
+    border: 0;
     display: inline-block;
   }
+
+button.button.button1 a{
+    color: #222;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+}
   
-.connect a:hover, a:active {
-    background-color:#222;
-    color: #c78c06;
-  }
