@@ -29,12 +29,18 @@ header {
 ul {
     list-style-type: none;
     padding-left: 0;
+    margin-top: 0;
 }
 
 ul li {
     padding: 1rem;
     padding-bottom: 1rem;
     text-align: center;
+}
+
+ul li:nth-child(1) {
+    background-color: #c78c06;
+    color: #222;
 }
 
 /* styling nav bottons */
@@ -80,7 +86,7 @@ ul li {
     display: table;
   }
 
-/* container holding the main banner and the main banner content
+/* container holding the main banner and the main banner content */
 .container {
     position: relative;
     text-align: left;
@@ -88,21 +94,23 @@ ul li {
 }
 
 .main-banner h1 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
-styling the main banner content
+/* styling the main banner content */
 .main-banner {
     position: absolute;
     padding-left: 1rem;
     padding-right: 1rem;
-    top: 600px;
+    padding-bottom: 1rem;
+    top: 100px;
     width: 100%;
     background-color: rgba(34, 34, 34, 0.5); 
 }
 
-styling the main banner button 
-.button a:link, a:visited {
+
+/* styling the main banner button  */
+.connect a:link, a:visited {
     background-color: #c78c06;
     color: #222;
     padding: 30px 40px;
@@ -111,7 +119,7 @@ styling the main banner button
     display: inline-block;
   }
   
-.button a:hover, a:active {
+.connect a:hover, a:active {
     background-color:#222;
     color: #c78c06;
-  } */
+  }
