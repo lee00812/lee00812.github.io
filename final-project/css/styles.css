@@ -1,3 +1,70 @@
+/* adding css reset code in the start of the file as request*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* this is the body wrapper to add the top margin*/
+.wrapper {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* styling header */
+header {
+    background-color: #222222;
+}
+
+/* adding the left and right margin for heading */
+.header {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -10,12 +77,8 @@
 
 /* styling body font */
 body {
-    font-family: 'Open Sans', sans-serif;
-}
-
-/* styling header */
-header {
-    background-color: #222222;
+    font-family: Open Sans, Arial, Helvetica, sans-serif;
+    background-color: #222;
 }
 
 .logo {
@@ -24,22 +87,24 @@ header {
     padding-bottom: 1rem;
 }
 
-/* styling list style */
+/* styling the meun on the homepage */
 ul {
     list-style-type: none;
     padding-left: 0;
     margin-top: 0;
 }
 
+/* add padding and align text on the meun */
 ul li {
     padding: 1rem;
     padding-bottom: 1rem;
     text-align: center;
 }
 
+/* adjust background color and font color for the first list item */
 ul li:nth-child(1) {
-    background-color: #c78c06;
     color: #222;
+    background-color: #c78c06;
 }
 
 /* styling nav buttons */
@@ -85,16 +150,24 @@ ul li:nth-child(1) {
     display: table;
   }
 
-/* container holding the main banner and the main banner content */
-.container1 {
+/* class home holding the main banner and the main banner content */
+.home {
     position: relative;
     text-align: left;
     color: white;
-    min-width: 650px;
+}
+
+.home img{
+    max-width: 100%;
 }
 
 .main-banner h1 {
     font-size: 3rem;
+}
+
+.main-banner p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 /* styling the main banner content */
@@ -109,18 +182,106 @@ ul li:nth-child(1) {
 }
 
 /* styling the main banner button */
-button.button.button1 {
-    background-color: #c78c06;
+.connect {
+    background-color: #c78c06; /* Green */
+    border: none;
+    color: #222;
     padding: 30px 40px;
     text-align: center;
-    border: 0;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
     display: inline-block;
+    font-size: 1rem;
   }
 
-button.button.button1 a{
-    color: #222;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    text-decoration: none;
+.about {
+    background-color: #ffe6ac;
 }
-  
+
+.about img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 95%;
+}
+
+.about h2,
+.about p{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+}
+
+.about h2,
+.service h2 {
+    font-size: 2.5rem;
+    font-weight: bolder ;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.service {
+    background-color: #fff;
+}
+
+.service img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.service div {
+    background-color: #ffe6ac;
+}
+
+.service p,
+.service h3 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.service button {
+    margin: 10px;
+}
+
+.web-digital,
+.web-marketing,
+.web-video,
+.web-web,
+.web-print {
+    margin: 10px;
+}
+
+.web-digital h3,
+.web-marketing h3,
+.web-video h3,
+.web-web h3,
+.web-print h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+.digital,
+.marketing,
+.video,
+.web,
+.print {
+    background-color: #222; /* Green */
+    border: none;
+    color: white;
+    padding: 30px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    font-size: 1rem;;
+  }
