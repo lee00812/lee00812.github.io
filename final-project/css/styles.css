@@ -51,7 +51,6 @@ table {
 /* this is the body wrapper to add the top margin*/
 .wrapper {
     width: 100%;
-    margin-top: 20px;
 }
 
 /* styling header */
@@ -61,8 +60,7 @@ header {
 
 /* adding the left and right margin for heading */
 .header {
-    margin-left: 20px;
-    margin-right: 20px;
+    border: 20px solid #222;
 }
 
 * {
@@ -78,7 +76,6 @@ header {
 /* styling body font */
 body {
     font-family: Open Sans, Arial, Helvetica, sans-serif;
-    background-color: #222;
 }
 
 .logo {
@@ -207,10 +204,9 @@ ul li:nth-child(1) {
     width: 95%;
 }
 
-.about h2,
-.about p{
-    padding-left: 10px;
-    padding-right: 10px;
+.about p {
+    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 30px;
 }
 
@@ -220,6 +216,7 @@ ul li:nth-child(1) {
     font-weight: bolder ;
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 20px;
 }
 
 .service {
@@ -267,8 +264,6 @@ ul li:nth-child(1) {
     padding-top: 30px;
     padding-bottom: 30px;
 }
-
-
 
 .digital,
 .marketing,
