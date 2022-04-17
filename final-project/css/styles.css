@@ -359,6 +359,11 @@ ul li:nth-child(1) {
     font-size: 1rem;;
   }
 
+.teams hr {
+    border: 1px solid #c78c06;
+    width: 97%;
+}
+
   .info label {
       display: block;
   }
