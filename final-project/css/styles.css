@@ -67,12 +67,6 @@ header {
     box-sizing: border-box;
 }
 
-.clearfix::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
 /* styling body font */
 body {
     font-family: 'Open Sans', sans-serif;
@@ -166,8 +160,9 @@ ul li:nth-child(1) {
 }
 
 .main-banner h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 3rem;
+    font-weight: bold;
 }
 
 .main-banner p {
@@ -215,7 +210,7 @@ ul li:nth-child(1) {
 .about p {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 
 .about h2,
@@ -281,8 +276,8 @@ ul li:nth-child(1) {
 .web-video h3,
 .web-web h3,
 .web-print h3,
-.team-john h3,
-.team-bob h3,
+.john-intro h3,
+.bob-intro h3,
 .contact h3,
 .hours h3,
 .map h3 {
@@ -291,8 +286,8 @@ ul li:nth-child(1) {
     padding-top: 20px;
 }
 
-.team-john h4,
-.team-bob h4 {
+.john-intro h4,
+.bob-intro h4 {
     font-size: 14px;
     font-weight: bold;
 }
@@ -436,4 +431,139 @@ footer {
     color: #c78c06;
     padding: 20px;
     line-height: 2rem;
+}
+
+@media screen and (min-width: 760px) {
+    li {
+        display: inline;
+   }
+
+    .header {
+       display: grid;
+       grid-template-columns: 1fr 5fr 2fr;
+       align-items: center;
+   }
+
+   .logo {
+       max-height: 80px;
+       padding-top: 0;
+       padding-bottom: 0;
+       margin-right: 30px;
+   }
+
+   .home img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    }
+
+    .main-banner {
+        max-width: 70%;
+        position: absolute;
+        top: 20%;
+        left: 15%;
+    }
+
+    .about img {
+        float: left;
+        width: 50%;
+        padding-right: 10px;
+      }
+
+    /* Clear floats after image containers */
+    .about::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+    .about {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .about p {
+        line-height: 16px;
+    }
+
+    body p {
+        font-size: 12px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas:
+        "web-digital web-digital web-digital web-marketing web-marketing web-marketing"
+        "web-video web-video web-web web-web web-print web-print"
+    }
+
+    .grid .web-digital {
+        grid-area: web-digital;
+    }
+
+    .grid .web-marketing {
+        grid-area: web-marketing;
+    }
+
+    .grid .web-video {
+        grid-area: web-video;
+    }
+
+    .grid .web-web {
+        grid-area: web-web;
+    }
+
+    .grid .web-print {
+        grid-area: web-print;
+    }
+
+    .service {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .visions {
+        margin-top: 10px;
+    }
+
+    .team-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "john-img john-intro"
+        "bob-intro bob-img"
+    }
+
+    .john-img {
+        grid-area: john-img;
+    }
+
+    .bob-img {
+        grid-area: bob-img;
+    }
+
+
+    .john-intro {
+        grid-area: john-intro;
+    }
+    
+    .bob-intro {
+        grid-area: bob-intro
+    }
+
+    
+   
+
+}
+
+
+  
+
+
+
+
+    
 }
