@@ -25,18 +25,21 @@
         <div class="nav">
             <nav>
                 <ul>
-                    <li ><a href="#home">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <!-- this is the search bar -->
+            </nav>
+        </div>
+        <div class="search">
+            <nav>
                 <form class="search">
                     <input type="text" placeholder="Search" name="search">
                     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
-             </nav>
+            </nav>
         </div>
     </header>
 
@@ -45,7 +48,7 @@
             <img src="images/main-banner.jpg" alt="Welcome to Three Star Media">
                 <div class="main-banner">
                     <h1>Welcome to Three Star Media</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam commodi corrupti vero accusamus exercitationem! </p>
+                    <p>Lorem ipsum dolor sit amet. Sit iste omnis ut autem repellendus non tempore earum et reprehenderit minima. In quae enim vel recusandae iure et internos quae. </p>
                     <button class="connect">Connect with us
                         <i class="fa-solid fa-play"></i>
                     </button>
@@ -61,24 +64,26 @@
     </div>
 
     <!-- this is the class for all service sections-->
-    <div class="service">
-        <h2>Our Services</h2>
-        <div class="web-digital">
-            <img src="images/digital.jpg" alt="Our Services">
-            <h3>Digital Transformation</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam aliquam, ea deleniti vel repudiandae atque minus. Doloremque excepturi ullam eius rem sequi, quia temporibus, iusto recusandae, accusantium autem dolore facilis!</p>
-            <button class="digital">Digital Plans
-                <i class="fa-solid fa-play"></i>
-            </button>
-        </div>
-        <div class="web-marketing">
-            <img src="images/marketing.jpg" alt="Marketing">
-            <h3>Marketing</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas delectus, cumque a numquam dolores ipsa dignissimos suscipit obcaecati praesentium officia, eius aliquam unde ab architecto! Voluptatem unde adipisci ad ex!</p>
-            <button class="marketing">Marketing Plans
-                <i class="fa-solid fa-play"></i>
-            </button>
-        </div>
+    <section>
+        <div class="service">
+            <h2>Our Services</h2>
+            <div class="grid">
+            <div class="web-digital">
+                <img src="images/digital.jpg" alt="Our Services">
+                <h3>Digital Transformation</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam aliquam, ea deleniti vel repudiandae atque minus. Doloremque excepturi ullam eius rem sequi, quia temporibus, iusto recusandae, accusantium autem dolore facilis!</p>
+                <button class="digital">Digital Plans
+                    <i class="fa-solid fa-play"></i>
+                </button>
+            </div>
+            <div class="web-marketing">
+                <img src="images/marketing.jpg" alt="Marketing">
+                <h3>Marketing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas delectus, cumque a numquam dolores ipsa dignissimos suscipit obcaecati praesentium officia, eius aliquam unde ab architecto! Voluptatem unde adipisci ad ex!</p>
+                <button class="marketing">Marketing Plans
+                    <i class="fa-solid fa-play"></i>
+                </button>
+            </div>
         <div class="web-video">
             <img src="images/video.jpg" alt="Video Production">
             <h3>Video Production</h3>
@@ -103,7 +108,9 @@
                 <i class="fa-solid fa-play"></i>
             </button>
         </div>
+        </div>
     </div>
+    </section>
 
     <!-- this is the versions container -->
     <div class="visions" id="visions">
@@ -118,22 +125,29 @@
     </div>
 
     <!-- our team -->
-    <div class="teams" id="teams">
+    <div class="teams" id="team">
         <h2>Our Team</h2>
+        <div class="team-grid">
         <div class="team-john">
-            <img src="images/john.jpg" alt="John Doe">
+            <img class="john" src="images/john.jpg" alt="John Doe">
+        </div>
+        <div class="john-intro">
             <h3>John Doe</h3>
             <h4>CEO and Co-owner</h4>
             <hr>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi exercitationem quaerat adipisci error assumenda vitae repellendus amet quibusdam impedit harum voluptatem, est soluta, alias voluptas reiciendis facere quae, quam animi!</p>
         </div>
         <div class="team-bob">
-            <img src="images/bob.jpg" alt="Bob Rite">
+            <img class="bob" src="images/bob.jpg" alt="Bob Rite">
+        </div>
+        <div class="bob-intro">
             <h3>Bob Rite</h3>
             <h4>CFO and Co-owner</h4>
             <hr>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor libero veniam reiciendis laudantium corporis accusamus enim impedit repellat doloribus quaerat neque fugiat quisquam, officiis assumenda soluta omnis saepe earum aspernatur?</p>
         </div>
+    </div>
+
     </div>
 
     <!-- this is the contact form section-->
@@ -161,7 +175,7 @@
 
     <!-- office hours table -->
     <section class="hours">
-        <h3 id="hours">Hours of operation</h2>
+        <h3 id="hours">Hours of operation</h3>
         <table>
             <tr>
                 <th>Days</th>
