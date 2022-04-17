@@ -75,7 +75,11 @@ header {
 
 /* styling body font */
 body {
-    font-family: Open Sans, Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+
+
 }
 
 .logo {
@@ -160,6 +164,7 @@ ul li:nth-child(1) {
 
 .main-banner h1 {
     font-size: 3rem;
+    line-height: 3rem;
 }
 
 .main-banner p {
@@ -211,35 +216,47 @@ ul li:nth-child(1) {
 }
 
 .about h2,
-.service h2 {
+.service h2,
+.teams h2,
+.contact h2{
     font-size: 2.5rem;
     font-weight: bolder ;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 20px;
 }
 
-.service {
+.service,
+.teams,
+.contact {
+    margin-top: 1rem;
     background-color: #fff;
 }
 
-.service img {
+.service img,
+.teams img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
 }
 
-.service div {
+.service div,
+.teams div {
     background-color: #ffe6ac;
 }
 
-.service p,
-.service h3 {
+.service p, h3,
+.teams h3, h4 {
     padding-top: 1rem;
-    padding-bottom: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.teams p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
 }
 
 .service button {
@@ -250,7 +267,9 @@ ul li:nth-child(1) {
 .web-marketing,
 .web-video,
 .web-web,
-.web-print {
+.web-print,
+.team-john,
+.team-bob {
     margin: 10px;
 }
 
@@ -258,11 +277,21 @@ ul li:nth-child(1) {
 .web-marketing h3,
 .web-video h3,
 .web-web h3,
-.web-print h3 {
+.web-print h3,
+.team-john h3,
+.team-bob h3,
+.contact h3,
+.hours h3,
+.map h3 {
     font-size: 1.5rem;
     font-weight: bold;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.team-john h4,
+.team-bob h4 {
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .digital,
@@ -280,3 +309,118 @@ ul li:nth-child(1) {
     display: inline-block;
     font-size: 1rem;;
   }
+
+  .visions {
+    position: relative;
+    width: 100%;
+    height: auto;
+    color: #fff;
+  }
+
+  .visions img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+  }
+
+  .visions-main {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+  }
+
+  .visions h2 {
+    font-size: 2rem;
+    font-weight: bolder ;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+  }
+
+  .visions p {
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+  }
+
+  .more  {
+    background-color: #222; /* dark gery */
+    opacity: 0.9;
+    border: 1px solid #c58a09;
+    color: white;
+    padding: 30px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    font-size: 1rem;;
+  }
+
+  .info label {
+      display: block;
+  }
+
+  .info input, textarea {
+      width: 100%;
+  } 
+
+  .info textarea {
+      height: 150px;
+  }
+
+  .contact div {
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 10px;
+  }
+
+  .contact button {
+    background-color: #222; /* dark gery */
+    border: none;
+    color: #c78c06;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    font-size: 1rem;;
+  }
+
+  table, th, td {
+      border: 1px solid #222;
+      height: 50px;
+  }
+
+table {
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+
+.hours tr:first-child {
+    background-color: #ffe6ac;
+}
+
+.hours {
+    margin: 10px;
+}
+
+.hours h3 {
+    padding-left: 0;
+}
+
+.map iframe {
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #222;
+    color: #c78c06;
+    padding: 20px;
+    line-height: 2rem;
+}
