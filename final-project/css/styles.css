@@ -103,8 +103,11 @@ ul li {
 }
 
 /* adjust background color and font color for the first list item */
-ul li:nth-child(1) {
+ul li a:nth-child(1) {
     color: #222;
+}
+
+ul li:nth-child(1) {
     background-color: #c78c06;
 }
 
@@ -413,9 +416,14 @@ table {
     width: 100%;
     height: 300px;
     margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+}
+
+.map {
+    margin: 10px;
+}
+
+.map h3 {
+    padding-left: 0;
 }
 
 footer {
