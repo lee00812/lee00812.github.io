@@ -554,6 +554,36 @@ footer {
         grid-area: bob-intro
     }
 
+    .teams {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .teams H2 {
+        padding-left: 0;
+    }
+
+    .contact-us {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "msg map"
+        "hrs hrs"
+    }
+
+    .contact {
+        grid-area: msg;
+    }
+
+    .hours {
+        grid-area: hrs;
+    }
+
+    .map {
+        grid-area: map;
+    }
+
     
    
 
