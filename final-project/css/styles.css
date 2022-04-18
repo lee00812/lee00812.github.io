@@ -96,14 +96,11 @@ ul li {
     text-align: center;
 }
 
-/* adjust background color and font color for the first list item */
-ul li a:nth-child(1) {
+.nav .menu:hover {
     color: #222;
-}
-
-ul li:nth-child(1) {
     background-color: #c78c06;
 }
+
 
 /* styling nav buttons */
 .nav a:link, a:visited {
@@ -135,11 +132,13 @@ ul li:nth-child(1) {
     border: 1px solid #c78c06;
     cursor: pointer;
   }
-  
-.search button:hover {
+
+  .search button:hover {
     background: #c78c06;
     color: #222;
-  }
+}
+
+
 
   /* Clear floats */
 .search::after {
@@ -434,6 +433,13 @@ footer {
 }
 
 @media screen and (min-width: 760px) {
+    .wrapper {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+
+
     li {
         display: inline;
    }
@@ -445,7 +451,7 @@ footer {
    }
 
    .logo {
-       max-height: 80px;
+       max-height: 100px;
        padding-top: 0;
        padding-bottom: 0;
        margin-right: 30px;
@@ -563,7 +569,7 @@ footer {
         padding-left: 0;
     }
 
-    .contact-us {
+    .grid-contact {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -572,7 +578,7 @@ footer {
         "hrs hrs"
     }
 
-    .contact {
+    .email {
         grid-area: msg;
     }
 
@@ -582,6 +588,23 @@ footer {
 
     .map {
         grid-area: map;
+    }
+
+    .contact {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .contact h2, h3 {
+        padding-left: 0;
+    }
+
+    .contact div {
+        padding: 0;
+    }
+
+  
+
     }
 
     
