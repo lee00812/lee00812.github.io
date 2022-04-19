@@ -48,12 +48,12 @@ table {
 	border-spacing: 0;
 }
 
-/* this is the body wrapper to add the top margin*/
-.wrapper {
+/* this is the body container to add the width*/
+.container {
     width: 100%;
 }
 
-/* styling header */
+/* adding #222 as the background color for the header */
 header {
     background-color: #222222;
 }
@@ -67,35 +67,35 @@ header {
     box-sizing: border-box;
 }
 
-/* styling body font */
+/* used the Open Sans Google font for the website, the font-family was copied from the google font website */
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 1.5em;
-
-
 }
 
+/* styling the logo background and heading */
 .logo {
     background-color: #c58a09;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
-/* styling the meun on the homepage */
+/* styling the meun on the homepage, removed dot and ajusted padding and margin*/
 ul {
     list-style-type: none;
     padding-left: 0;
     margin-top: 0;
 }
 
-/* add padding and align text on the meun */
+/* add padding and align center all text on the meun */
 ul li {
     padding: 1rem;
     padding-bottom: 1rem;
     text-align: center;
 }
 
+/* add hover style for the menu bar */
 .nav .menu:hover {
     color: #222;
     background-color: #c78c06;
@@ -108,12 +108,12 @@ ul li {
     color: #c78c06;
 }
 
-/* styling search class */
+/* styling search class to allow padding around it */
 .search {
     padding: 1rem;
 }
 
-/* style the search field */
+/* style the search field，including border style, padding, width and background color */
 .search input[type=text] {
     padding: 1rem;
     border: 1px solid #c78c06;
@@ -138,16 +138,14 @@ ul li {
     color: #222;
 }
 
-
-
-  /* Clear floats */
+  /* clear floats */
 .search::after {
     content: "";
     clear: both;
     display: table;
   }
 
-/* class home holding the main banner and the main banner content */
+/* class home holding the main banner and the main banner content, this allows me to overlay text on an image */
 .home {
     position: relative;
     text-align: left;
@@ -193,6 +191,7 @@ ul li {
     font-size: 1rem;
   }
 
+  /* styling the about us section, includes image position, text position, width and padding */
 .about {
     background-color: #ffe6ac;
 }
@@ -212,6 +211,7 @@ ul li {
     padding-bottom: 10px;
 }
 
+/* align all h2 style including font-size, font-weight and padding */
 .about h2,
 .service h2,
 .teams h2,
@@ -223,6 +223,7 @@ ul li {
     padding-left: 20px;
 }
 
+/* align all margin-top and background color for the services section, team intro section and contact us section */
 .service,
 .teams,
 .contact {
@@ -230,6 +231,12 @@ ul li {
     background-color: #fff;
 }
 
+/* adding margin for all buttons under the services section */
+.service button {
+    margin: 10px;
+}
+
+/* align all images style for the service section and team section */
 .service img,
 .teams img {
     display: block;
@@ -238,38 +245,34 @@ ul li {
     width: 100%;
 }
 
-.service div,
-.teams div {
-    background-color: #ffe6ac;
-}
-
-.service p, h3,
-.teams h3, h4 {
+/* to align the padding for all sub-heading and paragraph text */
+.service p,
+.service h3,
+.teams h3, 
+.teams h4,
+.teams p {
     padding-top: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
-.teams p {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 2rem;
-}
-
-.service button {
-    margin: 10px;
-}
-
+/* give all sub-categories under the services section a background color and margin */
 .web-digital,
 .web-marketing,
 .web-video,
 .web-web,
-.web-print,
-.team-john,
-.team-bob {
+.web-print {
     margin: 10px;
+    background-color: #ffe6ac;
 }
 
+/* add backgound color for the teams intro section */
+.john-intro,
+.bob-intro {
+    background-color: #ffe6ac;
+}
+
+/* align all h3 font-size, font-weight and padding */
 .web-digital h3,
 .web-marketing h3,
 .web-video h3,
@@ -285,18 +288,19 @@ ul li {
     padding-top: 20px;
 }
 
+/* align the team intro heading, inlcuding font-size and font-weight */
 .john-intro h4,
 .bob-intro h4 {
     font-size: 14px;
     font-weight: bold;
 }
 
-.digital,
+/* styling all buttons under the services section, with #222 background color, white color text, padding and a play icon */
 .marketing,
 .video,
 .web,
 .print {
-    background-color: #222; /* Green */
+    background-color: #222;
     border: none;
     color: white;
     padding: 30px 40px;
@@ -307,6 +311,7 @@ ul li {
     font-size: 1rem;;
   }
 
+  /* styling the visions banner, image position, width, and height */
   .visions {
     position: relative;
     width: 100%;
@@ -321,7 +326,7 @@ ul li {
   }
 
   .visions-main {
-      position: absolute;
+      position: absolute; 
       top: 10px;
       left: 20px;
   }
@@ -340,6 +345,7 @@ ul li {
       padding-bottom: 10px;
   }
 
+  /* styling the learn more button with color border and 90% opacity background color */
   .more  {
     background-color: #222; /* dark gery */
     opacity: 0.9;
@@ -353,11 +359,13 @@ ul li {
     font-size: 1rem;;
   }
 
+  /* added horizontal line */
 .teams hr {
     border: 1px solid #c78c06;
     width: 97%;
 }
 
+/* styling forms, table width, and message box height */
   .info label {
       display: block;
   }
@@ -376,8 +384,9 @@ ul li {
       padding-top: 10px;
   }
 
+  /* stlying contact us button following the mock up, with #222 color background and #c78c06 text color */
   .contact button {
-    background-color: #222; /* dark gery */
+    background-color: #222; /* dark grey */
     border: none;
     color: #c78c06;
     padding: 10px 20px;
@@ -388,6 +397,7 @@ ul li {
     font-size: 1rem;;
   }
 
+  /* stlying the office hours table, added border and enlarged height */
   table, th, td {
       border: 1px solid #222;
       height: 50px;
@@ -399,6 +409,7 @@ table {
       margin-bottom: 10px;
   }
 
+  /* added background color for the first row of the table by using first-child tag */
 .hours tr:first-child {
     background-color: #ffe6ac;
 }
@@ -411,6 +422,7 @@ table {
     padding-left: 0;
 }
 
+/* adjust the google map width and height */
 .map iframe {
     width: 100%;
     height: 300px;
@@ -425,6 +437,7 @@ table {
     padding-left: 0;
 }
 
+/* styling footer, inlcuding background color, padding and line-height following the mock up */
 footer {
     background-color: #222;
     color: #c78c06;
@@ -432,18 +445,20 @@ footer {
     line-height: 2rem;
 }
 
+/* Added media query for the screen size of 760px and above */
 @media screen and (min-width: 760px) {
-    .wrapper {
+    /* Followed instrustion to give the maximum width of the container is 1200px */
+    .container {
         max-width: 1200px;
         margin: auto;
     }
 
-
-
+    /* li tag allows me to display all menu categories inline */
     li {
         display: inline;
    }
 
+   /* used display grid to arrange the header spacing */
     .header {
        display: grid;
        grid-template-columns: 1fr 5fr 2fr;
@@ -470,13 +485,14 @@ footer {
         left: 15%;
     }
 
+    /* used float left to fix the image position */
     .about img {
         float: left;
         width: 50%;
         padding-right: 10px;
       }
 
-    /* Clear floats after image containers */
+    /* Clear floats after image tag */
     .about::after {
     content: "";
     clear: both;
@@ -493,9 +509,10 @@ footer {
     }
 
     body p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
+    /* used display grid to arrange all the sub-categories position on the desktop version */
     .grid {
         display: grid;
         grid-template-columns: repeat(6,1fr);
@@ -505,6 +522,7 @@ footer {
         "web-video web-video web-web web-web web-print web-print"
     }
 
+    /* belows giving all sub-categories a grid-area name */
     .grid .web-digital {
         grid-area: web-digital;
     }
@@ -534,6 +552,7 @@ footer {
         margin-top: 10px;
     }
 
+    /* used display grid to arrange the image and intro of John and Bob */
     .team-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -543,6 +562,7 @@ footer {
         "bob-intro bob-img"
     }
 
+    /* giving each intro class a grid-area name */
     .john-img {
         grid-area: john-img;
     }
@@ -569,6 +589,7 @@ footer {
         padding-left: 0;
     }
 
+    /* used display grid to arrange the position of each category under the contact us section, including send a message, map and offical hours */
     .grid-contact {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -578,6 +599,7 @@ footer {
         "hrs hrs"
     }
 
+    /* giving the grid-area name for each category under the contact us section */
     .email {
         grid-area: msg;
     }
@@ -602,21 +624,5 @@ footer {
     .contact div {
         padding: 0;
     }
-
-  
-
-    }
-
-    
-   
-
-}
-
-
-  
-
-
-
-
-    
-}
+} 
+/* css has been validated, thank you */
