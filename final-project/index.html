@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MTM6130 Final Project - lee00812</title>
-    <!-- this is the necessary script from the fontawesome page-->
+    <!-- this is the necessary script from the fontawesome page so I could use some icon on the website-->
     <script src="https://kit.fontawesome.com/38c29f5638.js" crossorigin="anonymous"></script>
-    <!-- this is the necessary script from the google font page -->
+    <!-- this is the necessary script from the google font page so I could use the specify font on the website -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
+    <div class="container">
 
-    <!-- this is the page header -->
+    <!-- this is the page header, including brand logo, nav bar with five categories, and a search bar. I used header to carry all of them -->
     <header class="header">
         <div class="logo">
             <img src="images/logo.png" alt="Three Star Media">
@@ -43,7 +43,7 @@
         </div>
     </header>
 
-    <!-- this is the home session -->
+    <!-- this is the home section, home section is where I put the home page banner, brand message and a connect with us button. Overlay text on image has been applied -->
     <div class="home" id="home">
             <img src="images/main-banner.jpg" alt="Welcome to Three Star Media">
                 <div class="main-banner">
@@ -54,7 +54,7 @@
                     </button>
                 </div>
     </div>
-    <!-- this is the about us section -->
+    <!-- this is the about us section, the div class="about" allows me to style the section image, background color, font size and padding -->
     <div class="about">
         <img src="images/about-us.jpg" alt="About Us">
         <h2>About Us</h2>
@@ -63,11 +63,12 @@
         <p>Vel nisi sint in incidunt corporis ut soluta iusto ut dolore quae qui praesentium quia eos reprehenderit culpa! Non tenetur ipsum est ipsa maxime aut dolore expedita qui exercitationem fugit.</p>
     </div>
 
-    <!-- this is the class for all service sections-->
+    <!-- this is the section for all services, the div class="grid" here allows me to use grid to style the five sub-categories for desktop version -->
     <section>
         <div class="service">
             <h2>Our Services</h2>
             <div class="grid">
+                <!-- web-digital section -->
             <div class="web-digital">
                 <img src="images/digital.jpg" alt="Our Services">
                 <h3>Digital Transformation</h3>
@@ -76,6 +77,7 @@
                     <i class="fa-solid fa-play"></i>
                 </button>
             </div>
+            <!-- web-marketing section -->
             <div class="web-marketing">
                 <img src="images/marketing.jpg" alt="Marketing">
                 <h3>Marketing</h3>
@@ -84,6 +86,7 @@
                     <i class="fa-solid fa-play"></i>
                 </button>
             </div>
+            <!-- web-video section -->
         <div class="web-video">
             <img src="images/video.jpg" alt="Video Production">
             <h3>Video Production</h3>
@@ -92,6 +95,7 @@
                 <i class="fa-solid fa-play"></i>
             </button>
         </div>
+        <!-- web-web section -->
         <div class="web-web">
             <img src="images/web.jpg" alt="Web Development">
             <h3>Web Development</h3>
@@ -100,6 +104,7 @@
                 <i class="fa-solid fa-play"></i>
             </button>
         </div>
+        <!-- web-print section -->
         <div class="web-print">
             <img src="images/print.jpg" alt="Print">
             <h3>Print</h3>
@@ -112,7 +117,7 @@
     </div>
     </section>
 
-    <!-- this is the versions container -->
+    <!-- this is the versions section, the class="visions" allows me to stlye the banner including background image, overlay text, button, font-size and padding -->
     <div class="visions" id="visions">
         <img src="images/vision.jpg" alt="Our Vision">
         <div class="visions-main">
@@ -124,22 +129,26 @@
         </div>
     </div>
 
-    <!-- our team -->
+    <!-- this is the team intro section, the class="teams" allows me to style the font-size and padding, the class="grid" allows me to style the grid for the desktop version -->
     <div class="teams" id="team">
         <h2>Our Team</h2>
         <div class="team-grid">
+        <!-- this is the image of john -->
         <div class="team-john">
             <img class="john" src="images/john.jpg" alt="John Doe">
         </div>
+        <!-- this is the text intro about John -->
         <div class="john-intro">
             <h3>John Doe</h3>
             <h4>CEO and Co-owner</h4>
             <hr>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi exercitationem quaerat adipisci error assumenda vitae repellendus amet quibusdam impedit harum voluptatem, est soluta, alias voluptas reiciendis facere quae, quam animi!</p>
         </div>
+        <!-- this is the image of bob -->
         <div class="team-bob">
             <img class="bob" src="images/bob.jpg" alt="Bob Rite">
         </div>
+        <!-- this is the text intro about bob -->
         <div class="bob-intro">
             <h3>Bob Rite</h3>
             <h4>CFO and Co-owner</h4>
@@ -150,10 +159,11 @@
 
     </div>
 
-    <!-- this is the contact form section-->
+    <!-- this is the contact us section, I used class="grid-contact" here, it allows me to style the three section by using grid for the desktop version -->
     <section class="contact">
         <h2 id="contact">Contact Us</h2>
         <div class="grid-contact">
+            <!-- this is the contact form section -->
             <div class="form">
                 <h3>Send us a message</h3>
                 <form action="nextpage.html" method="get">
@@ -175,7 +185,7 @@
                 </form>
             </div>
 
-            <!-- office hours table -->
+            <!-- this is the office hours table -->
             <div class="hours">
                 <h3 id="hours">Hours of operation</h3>
                 <table>
@@ -194,7 +204,7 @@
                 </table>
             </div>
 
-            <!-- This is the google map -->
+            <!-- This is the google map section -->
             <div class="map">
                 <h3>Location</h3>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d360082.54539790057!2d-76.24529063888639!3d45.16391586706872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2z5Lqe5bSX5piG5a246Zmi!5e0!3m2!1szh-TW!2shk!4v1649080411375!5m2!1szh-TW!2shk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -202,7 +212,7 @@
         </div>
     </section>
       
-        <!-- This is the copyright section -->
+        <!-- This is the copyright section, used footer tag for easy identify its a footer -->
         <footer>
           &copy; Copyright Three Star Media, 2020<br>
           All images are taken from Unsplash
@@ -212,3 +222,5 @@
     
 </body>
 </html>
+
+<!-- html has been validated, thank you -->
