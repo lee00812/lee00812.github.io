@@ -1,69 +1,231 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>My first web page</title>
-        <style>
-            header{
-                color: blue;
-            }
-        </style>
-    </head>
-    <body>
-        <!-- this is an HTML comment -->
-        <header>
-            <h1>This is updated</h1>
-            <h1>Changed for the second time</h1>
-            <h2>Second level heading</h2>
+<!doctype html>
+<html lang="en">
 
-            <h6>Sixth level heading</h6>
-        </header>
-        <hr>
-        <section>
-            <h2>Paragraphs</h2>
-            <p>Here is some text. <q>This is in the same line</q>This is a paragraph.</p>
-            <blockquote>
-                <cite>This is CITE example</cite>
-                This is a blockquote
-            </blockquote>
-            <q>This is the Q</q>
-            <p>More and more text here</p>
-            <p><em>This is emphazie</em>
-            <strong>This is strong</strong></p>
-            <p>we are learning <abbr title="Hyper Text Markup Language">HTML</abbr> today</p>
-            <p>Important Text <mark>HERE</mark></p>
-            <p>H<sub>2</sub>O and on October 25<sup>th</sup></p>
-            <p>This is <del>NOT</del> a sale</p>
-            <address>200 Queen's Road<br>
-                Ottawa ON
-            </address>
-                <hr>
-            <h2>
-                LIST
-            </h2>
-            <ul>
-                <h3>
-                    <li>Soup with seaweed and tofu</li></h3>
-                    <h4>
-                        <ol>
-                            <li>Water</li>
-                            <li>Oil</li>
-                            <li>Seaweed</li>
-                        <li>Tofu</li></ol>
-                    </h4>
-                    <h3>
-                    <li>Steam port ribs with black beans and garlic</li>
-                    <li>Fish</li>
-                </h3>
-            </ul>
-            <h3>
-                Description List
-            </h3>
-            <dl>
-                <dt>Winter</dt>
-                <dd>2022</dd>
-                <dt>Program</dt>
-                <dd>Web Development I</dd>
-            </dl>
-        </section>
-         </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gloria's Portfolio</title>
+    <!-- **** Inserts Google Font Link **** -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300&family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+       <!-- **** Insert Bootstrap Link **** --> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  
+  <body>
+    
+      <!-- **** Header Section **** -->
+<header>
+      <!-- ************************************
+               Navbar & Hamburger Menu
+      ***************************************** -->
+
+    <nav class="navbar navbar-expand-md bg-primary navbar-light text-light">
+      <div class="container-lg px-0">
+        <a class="navbar-brand mx-auto d-block" href="index.html"><img src="img/gloria-logo-200px.png" alt="Gloria's Design"></a>
+        <button class="navbar-toggler p-3 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon pr-3"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav flex-grow-1 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-center px-4" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-cente px-4" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-center px-4" href="mywork.html">My Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-center px-4" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+    <!-- ******************
+             Intro
+    *********************** -->
+  <main class="main-bg">
+    <section class="intro text-dark p-5">
+      <div class="container-lg mx-auto">
+        <div class="intro-text pb-5">
+          <div>
+            <h1 class="display-3 fw-light">Digital Marketing & Interactive Media Designs</h1>
+          </div>
+          <div class="py-2">
+            <p>Hi there, welcome to my website!<br>
+            My name is Gloria and I wear many hats on my head.</p>
+          </div>
+          <div>
+            <a href="about.html" class="btn btn-outline-primary btn-primary border rounded-pill border-primary px-5 py-2">Check it out</a>
+          </div>
+        </div>
+      </div>  
+    </section>
+  </main>
+
+  <!-- ******************
+             About
+    *********************** -->
+    <main class="about-bg">
+      <section class="about">
+        <div class="container-lg">
+          <div class="about-img">
+            <img class="mw-100 mx-auto d-block" src="img/Gloria-Lee-Man-Chit-600px.png" alt="Interactive Media Designer - Gloria MC Lee">
+          </div>
+          <div class="about-text p-5 text-center">
+              <div>
+                  <h3 class="display-5 fw-light">Hi, my name is Gloria.</h3>
+                  <p class="fw-light">I am a digital marketing professional and an interactive media designer based in Canada. Over the past seven years, I have been working with international brands such as...</p>
+              </div>
+              <div>
+                  <a href="about.html" class="btn btn-outline-primary btn-primary border rounded-pill p-3 border-primary py-2 px-5">Read more</a>
+              </div>
+           </div>
+        </div>
+      </section>
+    </main>
+
+       <!-- ******************
+             My Work
+       *********************** -->
+    <main class="mywork-bg">
+      <section class="mywork text-dark p-5">
+        <h2 class="display-3 text-center fw-light">My Experience</h2>
+       <!-- **********************************
+             CRM Project
+       *************************************** -->
+        <div class="container-lg text-center">
+          <div class="mywork-text">
+            <h2 class="display-4">CRM Project</h2>
+            <p>Managed to launch a journey-based online Spin & Win campaign with an incentive to promote email signup by Salesforce Marketing Cloud. From idea to implementation, the project involved...</p>
+            <div class="mywork-readmore">
+              <a href="mywork.html" class="btn btn-outline-primary btn-primary border rounded-pill p-3 border-primary py-2 px-5">Learn more</a>
+            </div>
+          </div>
+            <div class="mywork-img">
+              <img class="mw-100 mx-auto d-block" src="img/Game-development-project-spin-and-win.jpg" alt="Project Management - Fossil Group">
+            </div>
+        </div>
+       <!-- **********************************
+             Campaign Management
+       *************************************** -->
+        <div class="container-lg text-center">
+          <div class="mywork-text">
+            <h2 class="display-4">Campaign Management</h2>
+            <p>Oversaw end-to-end development and deployment of marketing automation such as audience targeting, dynamic content, segementation, campaign quality control, A/B testing and...</p>
+            <div class="mywork-readmore">
+              <a href="mywork.html" class="btn btn-outline-primary btn-primary border rounded-pill p-3 border-primary py-2 px-5">Learn more</a>
+            </div>
+          </div>
+            <div class="mywork-img">
+              <img class="mw-100 mx-auto d-block" src="img/Campaign-management.jpg" alt="Email Marketing - Fossil Group">
+            </div>
+        </div>
+        <!-- **********************************
+             CRM Activation Project 
+       *************************************** -->
+       <div class="container-lg text-center">
+        <div class="mywork-text">
+          <h2 class="display-4">CRM Activation Project</h2>
+          <p>Rolled out and implemented the customer journey and UX of the CRM activation. Worked closely with cross-functional teams including...</p>
+          <div class="mywork-readmore">
+            <a href="mywork.html" class="btn btn-outline-primary btn-primary border rounded-pill p-3 border-primary py-2 px-5">Learn more</a>
+          </div>
+        </div>
+          <div class="mywork-img">
+            <img class="mw-100 mx-auto d-block" src="img/CRM-activation-UX.jpg" alt="Email Marketing - Fossil Group">
+          </div>
+      </div>
+       <!-- **********************************
+             Mobile APP Redesign
+       *************************************** -->
+          <div class="container-lg text-center">
+            <div class="mywork-text">
+              <h2 class="display-4">Mobile APP Redesign</h2>
+              <p>Redesigned the user experience for a movie APP; including the loading page, login page, landing page and movie page. Identified the problems with...</p>
+              <div class="mywork-readmore">
+                <a href="mywork.html" class="btn btn-outline-primary btn-primary border rounded-pill p-3 border-primary py-2 px-5">Learn more</a>
+              </div>
+            </div>
+              <div class="mywork-img">
+                <img class="mw-100 mx-auto d-block" src="img/Mobile-app-redesign.jpg" alt="Website Redesign">
+              </div>
+          </div>
+       <!-- **********************************
+             Responsive HTML Coding
+       *************************************** --> 
+          <div class="container-lg text-center">
+            <div class="mywork-text">
+              <h2 class="display-4">Website Development</h2>
+              <p>Developed a mobile responsive website for a school project. The scope of work covered HTML development and CSS styling for a homepage</p>
+
+              <div class="mywork-readmore">
+                <a href="mywork.html" class="btn btn-outline-primary btn-primary border rounded-pill p-3 border-primary py-2 px-5">Read more</a>
+              </div>
+            </div>
+            <div class="mywork-img">
+              <img class="mw-100 mx-auto d-block" src="img/responsive-html-coding.jpg" alt="Responsive HTML Development">
+            </div>
+          </div>
+         
+      </section>
+    </main>
+           <!-- **********************************
+             Contact
+       *************************************** --> 
+
+    <main class="contact-bg">
+      <section class="contact text-dark p-5">
+        <div class="container-lg">
+          <div class="contact-text text-center">
+            <h1 class="display-3 fw-light">Contact</h1>
+            <p>Click the button below and send me a message.<br>
+              Thank you for stopping by!</p>
+          </div>
+          <div class="text-center">
+              <a href="mailto:gloriale108@gmail.com" class="btn btn-outline-primary btn-primary border rounded-pill p-3 border-primary py-2 px-5">Contact me</a>
+          </div>
+        </div>
+       </section>
+    </main>
+    <!-- ******************
+             Footer
+    *********************** -->
+  <footer class="bg-primary text-light" id="footermenu">
+    <div class="container-lg px-0 mx-auto">
+      <ul class="navbar-nav flex-grow-1 mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link text-center px-4" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-cente px-4" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-center px-4" href="mywork.html">My Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-center px-4" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div class="container-fluid py-3">
+      <div class="row">
+        <div class="col text-center">
+          <p>&copy; Copyright Gloria MC Lee, 2023</p>
+          </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+
 </html>

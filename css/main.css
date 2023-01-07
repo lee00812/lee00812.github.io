@@ -1,0 +1,225 @@
+  /* ------------------------------------------------------
+          Container, typography and color styles
+  ------------------------------------------------------*/
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.container-lg {
+  max-width: 1024px;
+}
+
+.main-bg,
+.contact-bg{
+  background: -webkit-linear-gradient(70deg, #f4e758 28%, rgba(244, 193, 94, 0) 28%), -webkit-linear-gradient(50deg, #f4c15e 36%, #ffffff 36%);
+}
+
+.about-bg,
+.mywork-bg {
+  border-top: 1rem solid #F06C52;
+  border-left: 1rem solid #F06C52;
+  border-right: 1rem solid #F06C52;
+}
+
+.mywork-bg {
+  border-bottom: 1rem solid #F06C52;
+}
+
+:root{
+    --bs-primary: #F06C52;
+    --bs-primary-rgb: 240, 108, 82;
+    --bs-secondary: #FFFFFF;
+    --bs-secondary-rgb: 255, 255, 255;
+  }
+
+  .btn-primary{
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+  }
+
+  .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff');
+  }
+
+  /* ----------------------------------------
+          active and hover styles
+  ---------------------------------------- */
+
+  .btn-outline-primary {
+    --bs-btn-color: var(--bs-light);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: var(--bs-primary);
+    --bs-btn-hover-bg: var(--bs-secondary);
+    --bs-btn-hover-border-color: var(--bs-primary);
+    --bs-btn-active-color: var(--bs-dark);
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: var(--bs-primary);
+    --bs-btn-disabled-color: var(--bs-dark);
+  }
+  .navbar-brand{
+    padding-left:10%;
+  }
+  .navbar-nav .nav-link{
+    color: var(--bs-secondary);
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link:focus{
+    background-color: var(--bs-secondary);
+    color: var(--bs-primary);
+  }
+
+    /* ----------------------------
+          image size and padding
+  ---------------------------------*/
+.intro-img div img{
+  max-width: 100%;
+}
+
+  .about-img {
+  max-width: 100%;
+}
+
+.fcf-label {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.fcf-input-group input {
+  height: 40px;
+  width: 100%;
+}
+
+.fcf-input-group textarea {
+  height: 150px;
+  width: 100%;
+}
+
+.fcf-form-class div:nth-child(5) {
+  padding-top: 2rem;
+}
+
+.mywork .container-lg h1,
+.mywork .container-lg h2,
+.mywork .container-lg h3{
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.mywork-readmore {
+  padding-bottom: 2rem;
+}
+
+
+  /* ----------------------------------------
+          Media Query
+  ---------------------------------------- */
+@media screen and (max-width: 390px) {
+  .navbar-brand{
+    padding-left:15%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-brand{
+    padding-left: 2rem;
+  }
+  
+  .navbar-nav{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .navbar-nav .nav-link{
+    color: var(--bs-secondary);
+    text-align: center;
+    border-radius: var(--bs-border-radius-pill)!important;
+    border-bottom: 0px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+  }
+
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link:focus{
+    background-color: var(--bs-secondary);
+    color: var(--bs-primary);
+    
+  }
+
+  .about .container-lg,
+  .contact .container-lg,{
+    max-width: 70%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .contact .container-lg {
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+  }
+
+    /********************************************
+          footer menu displays on mobile only
+  *********************************************/
+  #footermenu .container-lg {
+    display: none;
+  }
+
+
+}
+
+
+@media screen and (min-width: 960px) {
+.mywork .container-lg:nth-child(2),
+.mywork .container-lg:nth-child(4),
+.mywork .container-lg:nth-child(6) {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  column-gap: 4%;
+}
+
+.mywork .container-lg:nth-child(2) h2,
+.mywork .container-lg:nth-child(4) h2,
+.mywork .container-lg:nth-child(6) h2 {
+  padding: 0;
+}
+
+.mywork .container-lg:nth-child(2),
+.mywork .container-lg:nth-child(4),
+.mywork .container-lg:nth-child(6){
+  padding-top: 4rem;
+}
+}
+
+@media screen and (min-width: 1024px) {
+  .intro .container-lg,
+  .contact .container-lg {
+    max-width: 65%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about .container-lg,
+  .contact .container-lg,
+  .intro .container-lg {
+    max-width: 65%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .contact .container-lg {
+    padding-top: 2rem;
+    padding-bottom: 12rem;
+  }
+
+}
+
